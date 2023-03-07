@@ -13,4 +13,4 @@ myQ = {"Skin Disease": "Acne"}
 result = myTbl.find(myQ)
 
 for x in result:
-    print(x['Symptoms'])
+    print(x['Home Remedies/Treatments'])
