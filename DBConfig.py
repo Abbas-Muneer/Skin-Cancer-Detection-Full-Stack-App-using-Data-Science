@@ -13,3 +13,7 @@ for x in disease_list:
     result = myTbl.find_one(query)
     if result is None:
         myTbl.insert_one(x)
+
+query = {"Skin Disease": "Acne"}
+result = myTbl.find_one(query)
+print(result)
