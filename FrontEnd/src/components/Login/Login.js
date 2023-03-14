@@ -36,15 +36,33 @@ const Login = ({ onClose }) => {
     setPasswordNew(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (isLogin) {
       if(email.length === 0){
         alert("Please Enter The Email!");
       }
-      if(password.length === 0){
+       else if(password.length === 0){
         alert("Please Enter The Password!");
       }
+       else{
+        try {
+          const response = await fetch ('https://v1.nocodeapi.com/kaladaran/google_sheets/xmUNtrwDAeoHifUc?tabId=Sheet1', 
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify([[email, password]])
+          });
+          await response.json()
+          setEmail({UserEmail: ""})
+          setPassword({Password: ""})
+        } catch (err) {
+          console.log(err)
+        }
+       }
+
     } else {
       if(Firstname.length === 0){
         alert("Please Enter The First Name!");
@@ -52,12 +70,31 @@ const Login = ({ onClose }) => {
       if(Lastname.length === 0){
         alert("Please Enter The Last Name!");
       }
-      if(email.length === 0){
+      if(emailNew.length === 0){
         alert("Please Enter The Email!");
       }
-      if(password.length === 0){
+      if(passwordNew.length === 0){
         alert("Please Choose The Password!");
       }
+
+      try {
+        const response = await fetch ('https://v1.nocodeapi.com/kaladaran/google_sheets/xmUNtrwDAeoHifUc?tabId=Sheet2', 
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify([[Firstname, Lastname, emailNew, passwordNew]])
+        });
+        await response.json()
+        setFirstName({FirstName: ""})
+        setLastName({Lastname: ""})
+        setEmailNew({UserEmail: ""})
+        setPasswordNew({Password: ""})
+      } catch (err) {
+        console.log(err)
+      }
+
       const userData = { Firstname, Lastname, email, password };
       console.log(userData);
     }
@@ -66,6 +103,25 @@ const Login = ({ onClose }) => {
 
   const handleToggle = () => {
     setIsLogin(!isLogin);
+  };
+
+  const handleLogin = async () => {     //afsfasfsf
+    try {
+      const response = await fetch('/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await response.json();
+      if (data === 'TRUE') {
+        window.open('https://t1js5pdwdqczrcuosbwpjq-on.drv.tw/PPDBTEST/');
+        window.close();
+      } else {
+        // setErrorMessage('Data tidak valid!');
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const leftColumnStyle = {
@@ -137,7 +193,7 @@ const Login = ({ onClose }) => {
             {isLogin && (
               <h5>Forget Password? <p className='forget_password'>need help</p></h5>
             )}
-            <button type="submit">{isLogin ? 'Log in' : 'Sign up'}</button>
+            <button className='submit' type="submit">{isLogin ? 'Log in' : 'Sign up'}</button>
           </form>
         </div>
         <div className="right-column" style={rightColumnStyle}>
