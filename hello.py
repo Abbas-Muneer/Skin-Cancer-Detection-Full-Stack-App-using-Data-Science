@@ -4,6 +4,7 @@ from flask_cors import CORS
 import json
 import datetime
 from predict import predict_image_class
+from db import update_db
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ CORS(app)
 
 @app.route('/api/model',methods=['POST'])
 def predict():
+    update_db()
     file  = request.files['file']
     file.save(file.filename)
     #retrieve image from request 
