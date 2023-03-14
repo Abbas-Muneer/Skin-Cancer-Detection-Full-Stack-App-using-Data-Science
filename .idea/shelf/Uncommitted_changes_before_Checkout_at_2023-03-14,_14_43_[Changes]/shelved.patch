@@ -1,0 +1,15 @@
+Index: DBConfig.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pymongo\nimport pandas as pd\n\nmyClient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmyDB = myClient[\"skin_disease\"]\nmyTbl = myDB[\"disease\"]\n\ndisease_excel = pd.read_excel('SkinX-Disease.xlsx')\ndisease_list = disease_excel.to_dict(orient='record')\n\nfor x in disease_list:\n    query = {\"Skin Disease\": x[\"Skin Disease\"]}\n    result = myTbl.find_one(query)\n    if result is None:\n        myTbl.insert_one(x)\n\nquery = {\"Skin Disease\": \"Acne\"}\nresult = myTbl.find_one(query)\nprint(result)\n
+===================================================================
+diff --git a/DBConfig.py b/DBConfig.py
+--- a/DBConfig.py	
++++ b/DBConfig.py	
+@@ -14,6 +14,3 @@
+     if result is None:
+         myTbl.insert_one(x)
+ 
+-query = {"Skin Disease": "Acne"}
+-result = myTbl.find_one(query)
+-print(result)
