@@ -1,0 +1,311 @@
+Hello World
+
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS P:\Olympians> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to include in what will be committed)
+        FrontEnd/
+
+nothing added to commit but untracked files present (use "git add" to track)
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes to be committed:
+        new file:   FrontEnd/RepoTest.txt
+
+PS P:\Olympians> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS P:\Olympians> git add .
+PS P:\Olympians> git push
+info: please complete authentication in your browser...
+Everything up-to-date
+PS P:\Olympians> git push
+Everything up-to-date
+Author identity unknown
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kalat@Ghost.(none)')
+PS P:\Olympians> git push
+Everything up-to-date
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kalat@Ghost.(none)')
+Author identity unknown
+*** Please tell me who you are.
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+PS P:\Olympians> git push
+Everything up-to-date
+PS P:\Olympians> git checkout -b KaladaranFrontEnd
+Switched to a new branch 'KaladaranFrontEnd'
+PS P:\Olympians> git push
+fatal: The current branch KaladaranFrontEnd has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin KaladaranFrontEnd
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS P:\Olympians> git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   FrontEnd/RepoTest.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FrontEnd/.gitignore
+        FrontEnd/Module Outputs.txt
+        FrontEnd/README.md
+        FrontEnd/package-lock.json
+        FrontEnd/package.json
+        FrontEnd/src/
+
+PS P:\Olympians> git status
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   FrontEnd/RepoTest.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        FrontEnd/Module Outputs.txt
+        FrontEnd/README.md
+        FrontEnd/package-lock.json
+        FrontEnd/package.json
+        FrontEnd/src/
+
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kalat@Ghost.(none)')
+PS P:\Olympians> git config --global user.name "LoneWolf09271"
+
+Run
+
+  git config --global user.email "you@example.com"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'kalat@Ghost.(none)')
+PS P:\Olympians> git config --global user.name "LoneWolf09271"
+PS P:\Olympians>
+PS P:\Olympians> git config --global user.email "chanthirakumar.20211346@iit.ac.lk"
+PS P:\Olympians> git config --global user.name "LoneWolf09271"
+PS P:\Olympians> git commit -m "Add Front End Files"
+[KaladaranFrontEnd 7e174528] Add Front End Files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 FrontEnd/RepoTest.txt
+PS P:\Olympians> git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/App.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/App.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Button.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Button.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/CardItem.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Cards.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Cards.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Footer.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Footer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/HeroSection.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Home.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Navbar.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Home/Navbar.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Login/components/Button.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Login/components/Icon.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Login/components/Input.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Login/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/Login/reportWebVitals.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/pages/Products.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/pages/Services.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/components/pages/SignUp.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'FrontEnd/src/index.js', LF will be replaced by CRLF the next time Git touches it
+PS P:\Olympians> git commit -b "Add folder structure"
+error: unknown switch `b'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>)]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+PS P:\Olympians> git commit -m "Add folder structure"
+[KaladaranFrontEnd 0b4ec5b0] Add folder structure
+ 50 files changed, 19897 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 FrontEnd/Module Outputs.txt
+ create mode 100644 FrontEnd/README.md
+ create mode 100644 FrontEnd/package-lock.json
+ create mode 100644 FrontEnd/package.json
+ create mode 100644 FrontEnd/src/App.css
+ create mode 100644 FrontEnd/src/App.js
+ create mode 100644 FrontEnd/src/components/Home/Button.css
+ create mode 100644 FrontEnd/src/components/Home/Button.js
+ create mode 100644 FrontEnd/src/components/Home/CardItem.js
+ create mode 100644 FrontEnd/src/components/Home/Cards.css
+ create mode 100644 FrontEnd/src/components/Home/Cards.js
+ create mode 100644 FrontEnd/src/components/Home/Footer.css
+ create mode 100644 FrontEnd/src/components/Home/Footer.js
+ create mode 100644 FrontEnd/src/components/Home/HeroSection.css
+ create mode 100644 FrontEnd/src/components/Home/HeroSection.js
+ create mode 100644 FrontEnd/src/components/Home/Home.js
+ create mode 100644 FrontEnd/src/components/Home/Login.css
+ create mode 100644 FrontEnd/src/components/Home/Login.js
+ create mode 100644 FrontEnd/src/components/Home/Navbar.css
+ create mode 100644 FrontEnd/src/components/Home/Navbar.js
+ create mode 100644 FrontEnd/src/components/Home/SignUp.js
+ create mode 100644 FrontEnd/src/components/Images/Icon.png
+ create mode 100644 FrontEnd/src/components/Images/Image1.jpg
+ create mode 100644 FrontEnd/src/components/Images/Image2.jpg
+ create mode 100644 FrontEnd/src/components/Images/Image3.jpg
+ create mode 100644 FrontEnd/src/components/Images/Image4.jpg
+ create mode 100644 FrontEnd/src/components/Images/Image5.jpg
+ create mode 100644 FrontEnd/src/components/Images/Logo1.png
+ create mode 100644 FrontEnd/src/components/Images/bars-solid.svg
+ create mode 100644 FrontEnd/src/components/Login/Login.css
+ create mode 100644 FrontEnd/src/components/Login/Login.js
+ create mode 100644 FrontEnd/src/components/Login/background.jpg
+ create mode 100644 FrontEnd/src/components/Login/components/Button.jsx
+ create mode 100644 FrontEnd/src/components/Login/components/Icon.jsx
+ create mode 100644 FrontEnd/src/components/Login/components/Image1.jpg
+ create mode 100644 FrontEnd/src/components/Login/components/Image3.jpg
+ create mode 100644 FrontEnd/src/components/Login/components/Image4.jpg
+ create mode 100644 FrontEnd/src/components/Login/components/Input.jsx
+ create mode 100644 FrontEnd/src/components/Login/index.js
+ create mode 100644 FrontEnd/src/components/Login/reportWebVitals.js
+ create mode 100644 FrontEnd/src/components/pages/Products.js
+ create mode 100644 FrontEnd/src/components/pages/Services.js
+ create mode 100644 FrontEnd/src/components/pages/SignUp.css
+ create mode 100644 FrontEnd/src/components/pages/SignUp.js
+ create mode 100644 FrontEnd/src/index.js
+PS P:\Olympians> git commit -m "Add Front End Files" 
+On branch KaladaranFrontEnd
+PS P:\Olympians> git add .
+PS P:\Olympians> git status
+On branch KaladaranFrontEnd
+nothing to commit, working tree clean
+PS P:\Olympians> git push
+fatal: The current branch KaladaranFrontEnd has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin KaladaranFrontEnd
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS P:\Olympians> git push --set-upstream origin KaladaranFrontEnd
+Counting objects: 100% (61/61), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (57/57), done.
+Writing objects: 100% (60/60), 10.89 MiB | 615.00 KiB/s, done.
+remote: Resolving deltas: 100% (2/2), done.
+remote: Create a pull request for 'KaladaranFrontEnd' on GitHub by visiting:
+remote:
+To https://github.com/Abbas-Muneer/Olympians.git
+ * [new branch]        KaladaranFrontEnd -> KaladaranFrontEnd
+branch 'KaladaranFrontEnd' set up to track 'origin/KaladaranFrontEnd'.
+PS P:\Olympians> git check branch
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS P:\Olympians> git checkbranch
+git: 'checkbranch' is not a git command. See 'git --help'.
+PS P:\Olympians> git checkout
+Your branch is up to date with 'origin/KaladaranFrontEnd'.
+PS P:\Olympians> git branch
+* KaladaranFrontEnd
+  main
+PS P:\Olympians>  
