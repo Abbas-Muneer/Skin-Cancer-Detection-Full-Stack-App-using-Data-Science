@@ -1,0 +1,74 @@
+[
+    {
+        "name" : "Acne",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Atopic Dermatitis",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Basal Cell Carcinoma",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Eczema",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Melanocytic Nevi",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Melanoma",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Nail Fungus",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Psoriasis",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Serorrheic Keratoses",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Skin_Cancer",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Tinea Ringworm Candideas",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    },
+    {
+        "name" : "Warts",
+        "description" : "description",
+        "doctor" : "Doctor",
+        "first_aid" : "F AID"
+    }
+]
