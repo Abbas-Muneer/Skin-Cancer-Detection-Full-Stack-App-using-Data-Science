@@ -1,10 +1,10 @@
 import pymongo
 import pandas as pd
+import json as json
 
 myClient = pymongo.MongoClient("mongodb://localhost:27017/")
 myDB = myClient["skin_disease"]
 myTbl = myDB["disease"]
-
 
 def update_db():
     disease_excel = pd.read_excel('SkinX-Disease.xlsx')
@@ -20,4 +20,7 @@ def update_db():
 def get_disease_details(disease_name):
     query = {"Skin Disease": disease_name}
     result = myTbl.find_one(query)
-    return result
+    jason_data = json.dumps(
+        {"name": result["Skin Disease"], "description": result["Description"], "symptoms": result["Symptoms"],
+         "first_aid": result["Home Remedies/Treatments"]})
+    return jason_data

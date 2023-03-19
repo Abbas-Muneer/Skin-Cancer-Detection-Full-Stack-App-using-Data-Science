@@ -44,7 +44,7 @@ def predict_image_class(img_path: str) -> str:
     # print(predictions.argmax(axis=1))
 
     # return infection_CLASSES[predictions.argmax(axis=1)[0]]
-    return get_disease_details(predictions.argmax(axis=1)[0])
+    return get_disease_details(infection_CLASSES[(predictions.argmax(axis=1)[0])])
 
 
 if (__name__) == '__main__':
