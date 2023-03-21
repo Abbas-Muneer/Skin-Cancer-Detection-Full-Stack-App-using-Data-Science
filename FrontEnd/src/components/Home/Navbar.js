@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import logo from '../Images/Logo1.png';
+import menu from '../Images/Menu_bar.png';
+import HowItWorks from '../HowItWorks/HowItWorks';
 import './Navbar.css';
 
 function Navbar() {
@@ -34,7 +36,8 @@ function Navbar() {
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={click ? 'fas fa-times' : {menu}} />
+            <img src={menu} className='app-logo' alt='logo' />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
@@ -44,7 +47,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/HowItWorks'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

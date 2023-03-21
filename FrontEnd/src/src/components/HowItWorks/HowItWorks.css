@@ -1,0 +1,77 @@
+/* .how-it-works-page {
+    /* max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-image: url('../Images/HowItWorks.jpg');
+    background-position: center;
+    background-size: cover;
+  } */
+  .how-it-works-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../Images/HowItWorks5.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heading h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#4040ac, #106c46);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .heading {
+    padding: 300px;
+  }
+  
+  .step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .step-image1,
+  .step-description1,
+  .step-image2,
+  .step-description2 {
+    flex-basis: 48%;
+    text-align: center;
+  }
+  
+  .step-image1 img,
+  .step-image2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .step-description1 h2,
+  .step-description2 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .step-description1 p,
+  .step-description2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .step {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .step-image1,
+    .step-image2,
+    .step-description1,
+    .step-description2 {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }

@@ -30,7 +30,8 @@
 }
 
 .footer-subscription-text {
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
@@ -40,8 +41,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   padding: 12px;
   color: #fff;
 }
@@ -154,9 +154,14 @@
   margin-bottom: 16px;
 }
 
+.footer-logo {
+  height: 50px;
+}
+
 .website-rights {
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  /* background-color: #181817; */
 }
 
 @media screen and (max-width: 820px) {

@@ -32,47 +32,51 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    margin: -20px;
   }
   
   .right-column {
     /* position: relative; */
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(236, 236, 222, 0.7));
+    background-image: linear-gradient(to right, #FF4B2B, #FF416C);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding: 10px;
   }
 
   .right-column .login-parah1{
-    color: rgb(52, 16, 85);
+    /* color: rgb(52, 16, 85); */
+    color: whitesmoke;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 25px;
     padding: 5px;
   }
 
   .right-column .login-parah2{
-    color: rgb(83, 28, 8);
+    color: rgb(255, 217, 217);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 30px;
     padding: 5px;
   }
 
   .right-column .login-parah3{
-    color: rgb(10, 84, 12);
+    color: rgb(255, 217, 217);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 20px;
     font-weight: 5px;
   }
 
   .right-column .signup-parah1{
-    color: rgb(52, 16, 85);
+    /* color: rgb(52, 16, 85); */
+    color: whitesmoke;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 25px;
   }
 
   .right-column .signup-parah2{
-    color: rgb(83, 28, 8);
+    color: rgb(255, 217, 217);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 20px;
     text-align: center;
@@ -85,11 +89,11 @@
     display: flex;
   } */
   
-  .login-box img {
+  /* .login-box img {
     width: 100%;
     max-width: 350px;
     margin-left: 20px;
-  }
+  } */
   
   .login-box h2 {
     margin-top: 0;
