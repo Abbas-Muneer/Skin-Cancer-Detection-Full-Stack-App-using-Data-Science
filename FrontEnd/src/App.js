@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HowItWorks from './components/HowItWorks/HowItWorks';
-import Products from './components/pages/Products';
+import ImageInput from './components/ImageUploads/ImageUpload';
 import SignUp from './components/Login/Login';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/HowItWorks' component={HowItWorks} />
-          <Route path='/products' component={Products} />
+          <Route path='/ImageInput' component={ImageInput} />
           <Route path='/sign-up' component={SignUp} />
         </Switch>
         <Footer />

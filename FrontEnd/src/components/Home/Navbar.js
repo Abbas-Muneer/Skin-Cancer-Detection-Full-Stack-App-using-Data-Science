@@ -56,11 +56,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/products'
+                to='/ImageInput'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Medicines
+                Input Image
               </Link>
             </li>
             {button && (
