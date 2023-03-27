@@ -22,5 +22,5 @@ def get_disease_details(disease_name):
     result = myTbl.find_one(query)
     jason_data = json.dumps(
         {"name": result["Skin Disease"], "description": result["Description"], "symptoms": result["Symptoms"],
-         "first_aid": result["Home Remedies/Treatments"]})
+         "first_aid": result["Home Remedies/Treatments"], "medicine": result["Medicine"]})
     return jason_data
