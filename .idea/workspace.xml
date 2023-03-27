@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1140507f-b4f3-459d-b98f-f54eb96026d7" name="Changes" comment="add database to the system and get db data from image prediction and passed all tests">
+    <list default="true" id="1140507f-b4f3-459d-b98f-f54eb96026d7" name="Changes" comment="add skin diseaase data to db file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkinX-Disease.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/SkinX-Disease.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +135,8 @@
       <workItem from="1678943213019" duration="1522000" />
       <workItem from="1679224485750" duration="2090000" />
       <workItem from="1679742159206" duration="66000" />
+      <workItem from="1679742291587" duration="138000" />
+      <workItem from="1679911829543" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Changed display results">
       <created>1678162386475</created>
@@ -162,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679226685774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add skin diseaase data to db file">
+      <created>1679742383045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679742383045</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +183,8 @@
     <MESSAGE value="Changed display results" />
     <MESSAGE value="add database to the system and get db data from image prediction" />
     <MESSAGE value="add database to the system and get db data from image prediction and passed all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add database to the system and get db data from image prediction and passed all tests" />
+    <MESSAGE value="add skin diseaase data to db file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add skin diseaase data to db file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SDGP$DBConfig.coverage" NAME="DBConfig Coverage Results" MODIFIED="1678935774518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
