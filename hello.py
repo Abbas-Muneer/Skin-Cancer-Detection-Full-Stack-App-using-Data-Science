@@ -1,6 +1,6 @@
 from flask import Flask , render_template, jsonify ,request
 from os import getcwd
-//from flask_cors import CORS
+#from flask_cors import CORS
 import json
 import datetime
 from predict import predict_image_class
@@ -8,7 +8,7 @@ from db import update_db
 
 app = Flask(__name__)
 
-//CORS(app)
+#CORS(app)
 
 @app.route('/api/model',methods=['POST'])
 def predict():
