@@ -45,7 +45,7 @@ const HowItWorksPage = () => {
     return () => clearInterval(intervalId);
   }, [currentStep]);
 
-  const { image, title, description } = step[currentStep];
+  const { image, title, description } = steps[currentStep];
 
   
   return (
