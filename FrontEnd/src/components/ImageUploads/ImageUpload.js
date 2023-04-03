@@ -119,19 +119,19 @@ const ImageUpload = () => {
             <Accordion.Item eventKey="2">
               <Accordion.Header><h5>Symptoms</h5></Accordion.Header>
               <Accordion.Body>
-                <p>{reportData.symptoms}</p>
+                <p>{reportData.doctor}</p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header><h5>Home Remedies</h5></Accordion.Header>
+              <Accordion.Header><h5>Medice treatment</h5></Accordion.Header>
               <Accordion.Body>
                 <p>{reportData.first_aid}</p>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item eventKey="3">
               <Accordion.Header><h5>Medicines/Treatments</h5></Accordion.Header>
               <Accordion.Body>
-                <p>{reportData.medicine}</p>
+                <p>{reportData.first_aid}</p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

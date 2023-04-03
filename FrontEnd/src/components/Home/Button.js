@@ -1,6 +1,5 @@
 import React from 'react';
 import './Button.css';
-import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
@@ -9,7 +8,6 @@ const SIZES = ['btn--medium', 'btn--large'];
 export const Button = ({
   children,
   type,
-  onClick,
   buttonStyle,
   buttonSize
 }) => {
@@ -19,15 +17,21 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
+  const handleClick = () => {
+    const emailAddress = 'example@example.com'; // replace with your email address
+    const subject = 'Contact Request'; // replace with your desired subject
+    const body = 'Hello, I would like to contact you about...'; // replace with your desired message
+    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  };
+
   return (
-    <Link to='/sign-up' className='btn-mobile'>
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
-        type={type}
-      >
-        {children}
-      </button>
-    </Link>
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={handleClick}
+      type={type}
+    >
+      {children}
+    </button>
   );
 };
