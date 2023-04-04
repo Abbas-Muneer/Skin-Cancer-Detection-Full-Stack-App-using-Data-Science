@@ -5,11 +5,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../Images/HowItWorks5.jpg');
-  background-position: center;
-  background-size: cover;
-  padding-left: 20px;
+  background-color: #FFC6D9;
+  background-image: linear-gradient(to bottom, #FFC6D9, #8FB9FF);
+  background-attachment: fixed;
+  height: 100%;
+  padding: 50px;
 }
+
+
 
 .heading h1 {
   font-size: 72px;
@@ -32,7 +35,8 @@
   margin: 20px 0;
   margin-bottom: 20px;
   width: 100%;
-  padding: 10px;
+  padding: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
 }
 
 .step-image {
@@ -45,7 +49,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .step-description {
@@ -54,7 +58,7 @@
 }
 
 .step-description h2 {
-  font-size: 28px;
+  font-size: 50px;
   margin-bottom: 10px;
   background: -webkit-linear-gradient(#5794fd, #024eff);
   background-clip: text;
@@ -62,11 +66,34 @@
 }
 
 .step-description p {
-  font-size: 16px;
+  font-size: 25px;
+  font-weight: 300;
   line-height: 1.5;
   text-align: left;
   align-items: center;
   justify-content: center;
+  color: rgb(42, 39, 39);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.slider-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slider-indicator span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.slider-indicator span.active {
+  background-color: #555;
 }
 
 
@@ -97,3 +124,4 @@
     
   }
 }
+
