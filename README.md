@@ -11,5 +11,6 @@ Abbas, Isuru worked on the Back end.
 
 We used Flask api to connect back end with front end.
 
+
 We trained the model with many datasets with almost 10000+ images of skin diseases to get higher accuracy.
 
