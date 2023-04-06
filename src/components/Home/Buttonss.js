@@ -1,16 +1,20 @@
 import React from 'react';
-import './ButtonOri.css';
+import { useHistory } from 'react-router-dom';
+import '../../App.css';
+import './Button.css';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
-
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({
+const Buttonss = ({
   children,
   type,
   buttonStyle,
-  buttonSize
+  buttonSize,
+  onClick
 }) => {
+  const history = useHistory();
+
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -18,20 +22,18 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   const handleClick = () => {
-    const emailAddress = 'example@example.com'; // replace with your email address
-    const subject = 'Contact Request'; // replace with your desired subject
-    const body = 'Hello, I would like to contact you about...'; // replace with your desired message
-    const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+    history.push('/HowItWorks');
   };
 
   return (
     <button
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-      onClick={handleClick}
+      onClick={onClick || handleClick}
       type={type}
     >
       {children}
     </button>
   );
 };
+
+export default Buttonss;

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import { Button } from './Button';
+import Buttons from './Buttons';
+import Buttonss from './Buttonss';
 import './HeroSection.css';
 
 function HeroSection() {
@@ -8,23 +9,22 @@ function HeroSection() {
     <div className='hero-container'>
       {/* <image src = '/Image1.jpg' /> */}
       <h1>Skin X</h1>
-      <p>Your Skin Deserves The Best, So Does You :)</p>
+      <p>Your Skin Deserves The Best, So Do You :)</p>
       <div className='hero-btns'>
-        <Button
+        <Buttons
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
           GET STARTED
-        </Button>
-        <Button
+        </Buttons>
+        <Buttonss
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
           How Does It Works <i className='far fa-play-circle' />
-        </Button>
+        </Buttonss>
       </div>
     </div>
   );
