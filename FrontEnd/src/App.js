@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import ImageInput from './components/ImageUploads/ImageUpload';
-import SignUp from './components/Login/Login';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/HowItWorks' component={HowItWorks} />
           <Route path='/ImageInput' component={ImageInput} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/Login' component={Login} />
         </Switch>
         <Footer />
       </Router>
