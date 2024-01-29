@@ -1,16 +1,9 @@
-# Olympians
+This is a full stack web application incorparated with data science to detect skin cancer/infection.
 
-This is team olympians. CS-39. We are creating a web based application that detects skin infections and diseases.
-
-
-The Team used ReactJs for the front-end:
-Kaladaran, Fahith, Laxen worked on the Front end.
-
-The Team used ____________ for the back-end:
-Abbas, Isuru worked on the Back end.
-
-We used Flask api to connect back end with front end.
-
-
-We trained the model with many datasets with almost 10000+ images of skin diseases to get higher accuracy.
+The front end is created using ReactJS.
+The backend is done using Pyhton and connected to the front end using Flask API
+To train the model Google Colab was used.
+MongoDB was used as the database.
+Datasets were collected from kaggle.
+The model used in this is a pre trained model called Resnet Model. 
 
